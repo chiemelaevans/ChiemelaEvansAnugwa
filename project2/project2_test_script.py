@@ -2,7 +2,6 @@
 #This script loads the trained Gradient Boosting Classifier (final_model.pkl) and evaluates it using the saved hold-out test set (test_data.pkl).
 import pickle
 import pandas as pd
-from sklearn.metrics import precision_score, recall_score
 
 # Load the trained and saved model back for testing
 with open("final_model.pkl", "rb") as f:
@@ -24,3 +23,4 @@ result = pd.DataFrame({
 })
 print("=== True vs Predicted (First 30 Samples) ===")
 print(result)
+
