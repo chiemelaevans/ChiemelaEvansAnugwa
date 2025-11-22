@@ -10,7 +10,10 @@ The final model is saved as final_model.pkl. Input data must be a pandas DataFra
 Requirements
 
 To use the packaged model, first ensure you have Python 3.8+ with pandas, scikit-learn, and numpy installed. Python’s pickle module is used to save the trained model. Note that matplotlib is needed on the other hand to produce model summary plot. If these libraries are not already installed, install them using pip:
+
 pip install pandas numpy scikit-learn matplotlib
+
+
 
 
 Reproducing/ Retraining the model
