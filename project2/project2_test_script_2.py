@@ -2,9 +2,7 @@
 #This script loads the trained Gradient Boosting Classifier (final_model.pkl) and runs predictions on a test dataset created manually to verify model performance.
 
 # === LIBRARIES ===
-import os #operating system bridge
 import pandas as pd
-import numpy as np
 import pickle
 
 # Load the trained and saved model back for testing
@@ -501,7 +499,7 @@ sample_data = {
 
 }
 
-#Convert the sample data to a dataframe
+#Convert the sample data to a pandas dataframe
 df = pd.DataFrame(sample_data)
 
 # Use the sample dataset for quick prediction test
@@ -520,4 +518,5 @@ result = pd.DataFrame({
 })
 print("=== True vs Predicted ===")
 print(result)
+
 
