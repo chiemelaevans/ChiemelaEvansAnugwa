@@ -5,7 +5,7 @@ This project builds and deploys a Gradient Boosting Classifier to predict whethe
 
 Packaged Model Instructions
 
-The final model is saved as final_model.pkl. Input data must be a pandas DataFrame with exactly 483 feature columns corresponding to Windows API/system call counts (e.g., NtCreateFile, RegOpenKey), named as listed in feature_name_to_number_mapping.csv. All features must be numeric (missing/absent calls should be encoded as 0). Do not include target or risk_score columns in input data. The model outputs a binary prediction: 0 = low-risk executable (risk score < 30%), 1 = high-risk executable (risk score ≥ 30%). The test script (saved as project2_test_script_2.py) demonstrates this binary prediction by loading the pickled model (final_model.pkl) and  using ten manually created sample dataset, and printing both true and predicted risk classes side by side for validation.
+The final model is saved as final_model.pkl. Input data must be a pandas DataFrame with exactly 483 feature columns corresponding to Windows API/system call counts (e.g., NtCreateFile, RegOpenKey), named as listed in feature_name_to_number_mapping.csv. All features must be numeric (missing/absent calls should be encoded as 0). Do not include target or risk_score columns in input data. The model outputs a binary prediction: 0 = low-risk executable (risk score < 30%), 1 = high-risk executable (risk score ≥ 30%). The test script (saved as project2_test_script_2.py) demonstrates this binary prediction by loading the pickled model (final_model.pkl) and  using ten manually created sample dataset, and printing the predicted risk classes.
 
 Requirements
 
